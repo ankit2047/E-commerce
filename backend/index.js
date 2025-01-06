@@ -6,7 +6,7 @@ require("./db");
 
 const app=express();
 app.use(cors({
-    origin: ['http://localhost:3000, https://e-commerce-psi-lovat.vercel.app'],
+    origin: ['http://localhost:3000, https://e-commerce-psi-lovat.vercel.app/'],
     methods: ['GET', 'POST', 'OPTIONS', 'DELETE', 'PUT', 'PATCH'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
     credentials: true // Enable credentials
