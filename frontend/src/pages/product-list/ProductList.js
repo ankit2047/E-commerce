@@ -21,7 +21,7 @@ const ProductList = () => {
 
   const deleteData = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/deleteById/${id}`);
+      const response = await axios.delete(`https://e-commerce-qmhs.onrender.com/deleteById/${id}`);
 
       if (response) {
         alert("Product data delete successfully");

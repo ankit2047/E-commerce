@@ -17,7 +17,7 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-       const response=await axios.post("http://localhost:5000/contactUs",data);
+       const response=await axios.post("https://e-commerce-qmhs.onrender.com/contactUs",data);
        if (response.data) {
         alert("Contact informtion submitted");
         setdata({name:"",email:"",message:""})

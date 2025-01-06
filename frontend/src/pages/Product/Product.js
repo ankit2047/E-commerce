@@ -7,7 +7,7 @@ const Product = () => {
     const [data, setdata] = useState([])
     const getdata = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/getAllProduct");
+            const response = await axios.get("https://e-commerce-qmhs.onrender.com/getAllProduct");
             if (response) {
                 setdata(response.data);
             } else {

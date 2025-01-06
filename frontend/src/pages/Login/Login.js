@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/login", data);
+      const response = await axios.post("https://e-commerce-qmhs.onrender.com/login", data);
       if (response.data) {
         alert("User Login")
         setdata({ email: "", password: "" })

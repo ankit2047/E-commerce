@@ -22,7 +22,7 @@ const EditProduct = () => {
         e.preventDefault();
 
         try {
-            const response=await axios.patch(`http://localhost:5000/updateProductById/${id}`,data);
+            const response=await axios.patch(`https://e-commerce-qmhs.onrender.com/updateProductById/${id}`,data);
             if (response) {
                 alert("Product Updated")
                 setdata({name:"", price:"", description:""});

@@ -17,7 +17,7 @@ const AddProduct = () => {
         e.preventDefault();
         
         try {
-            const response=await axios.post(`http://localhost:5000/product`,data);
+            const response=await axios.post(`https://e-commerce-qmhs.onrender.com/product`,data);
             if (response.data) {
                 alert("Product Add Successfully.");
                 setdata({name:"",price:"",description:""});

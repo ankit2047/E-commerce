@@ -17,7 +17,7 @@ const Registration = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:5000/userRegistration", data);
+            const response = await axios.post("https://e-commerce-qmhs.onrender.com/userRegistration", data);
             if (response.data) {
                 alert("Data Submitted")
                 setdata({ name: "", email: "", phone: "", password: "" })
